@@ -25,15 +25,15 @@
       color: #FFFFFF;
       font-family: Arial, Helvetica, sans-serif;
       height: 100vw;
-      width: 90vw; 
+      width: 90%;
       margin: auto;
       margin-top: 60px;
-      right: auto;
       padding: 10px;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       display: flex;
-  
-      
+      position: fixed;
+  	   			 overflow-y: hidden;
+      overflow-x: hidden;
     }
     
     .header {
@@ -67,12 +67,16 @@
       flex: 50%;
       padding: 15px;
       text-align: justify;
+      overflow-y: hidden;
+      overflow-x: hidden;
     }
     
     .rightSide{
       flex: 50%;
       padding: 15px;
       text-align: justify;
+      overflow-y: scroll;
+      overflow-x: hidden;
     }
     
      .littleLeft{
@@ -95,7 +99,6 @@
     /* Track */
     ::-webkit-scrollbar-track {
       background: rgb(92, 255, 51);
-      border: 1px solid black;
     }
 
     /* Handle */
@@ -108,7 +111,12 @@
       background: #000000; 
     }
     
-   
+  div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+			  }
     
   </style>
 	</head>
@@ -129,7 +137,23 @@
 
     </div>
     <div class="rightSide">
-      <b>. ABOUT THE ARTISTS</b>
+      <b>. ABOUT THE ARTISTS</b><br><br>
+    
+      
+          Meadow Meyer &rarr;
+          Khanh Mai Doan &rarr;
+          Hongjin Chen &rarr;
+          Elisabeth James &rarr;
+          Lam Son Hoang &rarr;
+          Jake Phillips &rarr;
+          Jazmyn Joi &rarr;
+          Zihan Qiu &rarr;
+          Philipp Groth &rarr;
+          Hatem Shakkouf &rarr;
+          Madelaine Guthrie &rarr;
+  
+       <br>
+      
     </div>
   </div>
     
