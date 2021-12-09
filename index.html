@@ -22,6 +22,7 @@
     a {
       cursor: crosshair;
       text-decoration: none;
+
       
     }
     
@@ -29,15 +30,27 @@
       cursor: crosshair;
       text-decoration: none;
       font-weight: bold;
-      font-family: 'Libre Barcode 39', cursive;
+      font-family: "Libre Barcode 39", cursive;
       font-size: 45px;
+      color: rgb(92, 255, 51);
     }
     
     h3{
       font-size: 19px;
       font-weight: 500;
+      -webkit-animation: glow 4s ease-in-out infinite alternate;
+  		-moz-animation: glow 4s ease-in-out infinite alternate;
+  		animation: glow 4s ease-in-out infinite alternate;
     }
     
+    @-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgb(92, 255, 51), 0 0 20px rgb(92, 255, 51), 0 0 10px rgb(92, 255, 51), 0 0 40px rgb(92, 255, 51), 0 0 10px rgb(92, 255, 51), 0 0 60px rgb(92, 255, 51), 0 0 10px rgb(92, 255, 51);
+  }
+  to {
+    text-shadow: 0 0 20px rgb(92, 173, 51), 0 0 30px #ffffff, 0 0 40px rgb(92, 173, 51), 0 0 50px #ffffff, 0 0 10px rgb(92, 173, 51), 0 0 10px #fff, 0 0 80px #fff;
+  }
+}
     .spacer{
       height: 8vw;
     }
@@ -45,7 +58,7 @@
     .button {
     background-color: rgb(0, 0, 0, 0);
     border: 1px solid rgb(92, 255, 51);
-    color: rgb(92, 255, 51);
+    color: #FFFFFF;
     padding: 8px 10px;
     text-align: center;
     font-size: 14px;
@@ -53,6 +66,10 @@
     width: 100%;
     display: block;
     font-family: monospace;
+       -webkit-animation: glow 4s ease-in-out infinite alternate;
+  		-moz-animation: glow 4s ease-in-out infinite alternate;
+  		animation: glow 4s ease-in-out infinite alternate;
+    }
       
   		}
     .button:hover {
@@ -216,7 +233,7 @@
     <div class="rightSide">
     <h3>[ABOUT THE ARTISTS]</h3>
     
-          Hongjin Chen &rarr;
+      Hongjin Chen &rarr;
           Khanh Mai Doan &rarr;
           Lam Son Hoang &rarr;
           Philipp Groth &rarr;
@@ -274,14 +291,11 @@
       <img src="mdw_still.png" alt="joy, friends sititng around a table - presented on a mac destop with a tool bar at the bottom">
       <br>
       <br><br>
-      <h3>Meadow Meyer</h3><br>Meadow Meyer is an undergraduate at SAIC  studying to get their BFAW. They use all pronouns. Meadow is a lesbian, Pisces, writer, actor, drag king and artist. She loves her cat Pixie and dancing!<br>
+      <h3 id="A1">Meadow Meyer</h3><br>Meadow Meyer is an undergraduate at SAIC  studying to get their BFAW. They use all pronouns. Meadow is a lesbian, Pisces, writer, actor, drag king and artist. She loves her cat Pixie and dancing!<br>
  <br><hr class="rounded"><br>   
       
-      <img src="filename.jpg" alt="description of image">
-      <br>
-      <br><br>
-      <h3>Jake Phillips</h3> <br><br>
- <br><hr class="rounded"><br>     
+      <h3>Jake Phillips</h3> <br>
+      <hr class="rounded"><br>     
       <br>
      
       
@@ -297,26 +311,21 @@
       
       <img src="hs_still_glitch.png" alt="grey and creme glitched landscape">
       <br>
-      <br><br>
       <h3>Hatem Shakkouf</h3> <br>Hatem Shakkouf is a filmmaker born in Kuwait and originally from Syria. He came to Chicago in 2018 to peruse a bachelors degree in the fine arts with a Film/Video/New Media focus. At his time at the art institute he has learned to mix the abstract with narrative. Some of his more favored skills include Data moshing.<br>
       
     
- <br><hr class="rounded"><br><br>  
-      
-      <img src="filename.jpg" alt="description of image">
-      <br><br>
-      <h3>Lee Schulder</h3> <br><br>
+ <br><hr class="rounded"><br>  
+
+      <h3>Lee Schulder</h3>
       
 <br><hr class="rounded"><br>
       <br>  
       
       <img src="YZ_still.png" alt="abstract figure in black and white noise and static">
       <br>
-      <br><br>
       <h3>Yezhou Zheng</h3>
       <br>I make videos. <br>
-      
-      <br><br>
+      <br>
   
   
        <br>
