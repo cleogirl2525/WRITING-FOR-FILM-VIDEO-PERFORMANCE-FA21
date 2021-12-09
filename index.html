@@ -55,7 +55,7 @@
       height: 8vw;
     }
     
-    .button {
+    .button, #myButton {
     background-color: rgb(0, 0, 0, 0);
     border: 1px solid rgb(92, 255, 51);
     color: #FFFFFF;
@@ -72,13 +72,13 @@
     }
       
   	
-    .button:hover {
+    .button:hover, #myButton:hover {
     background-color: rgb(0, 0, 0, 0);
     border: 1px solid rgb(92, 255, 51);
     color: rgb(92, 255, 51);
     padding: 8px 10px;
     text-align: center;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 700;
     width: 100%;
     display: block;
@@ -221,7 +221,10 @@
       <br><br><br>
       
     <center>
-     <a>about the course</a>
+     <button onclick="myFunction()" id="myButton" value="about the course">about the course</button>
+
+ <div style="display:none;" id="myDIV"> HELLO HELLO
+</div>
       <br><a>the syllabus</a>
       <br><a>instagram</a>
       <br>
@@ -336,5 +339,27 @@
   <div class="footer">
     <marquee direction="right" scrollamount="3"><p>PREMIERE  = DECEMBER 15TH @@ 5:30PM CENTRAL TIME. &lt;&lt;&lt;&lt; PREMIERE  = DECEMBER 15TH @@ 5:30PM CENTRAL TIME. &lt;&lt;&lt;&lt; PREMIERE  = DECEMBER 15TH @@ 5:30PM CENTRAL TIME. &lt;&lt;&lt;&lt; PREMIERE  = DECEMBER 15TH @@ 5:30PM CENTRAL TIME. &lt;&lt;&lt;&lt; PREMIERE  = DECEMBER 15TH @@ 5:30PM CENTRAL TIME. &lt;&lt;&lt;&lt; PREMIERE  = DECEMBER 15TH @@ 5:30PM CENTRAL TIME. &lt;&lt;&lt;&lt; PREMIERE  = DECEMBER 15TH @@ 5:30PM CENTRAL TIME. &lt;&lt;&lt;&lt; PREMIERE  = DECEMBER 15TH @@ 5:30PM CENTRAL TIME. &lt;&lt;&lt;&lt;  </p></marquee>
 </div>
+    
+    <script>function myFunction() {
+
+            var btn = document.getElementById("myButton");
+            //to make it fancier
+            if (btn.value == "about the course") {
+                btn.value = "about the course";
+                btn.innerHTML = "about the course";
+            }
+            else {
+                btn.value = "about the course";
+                btn.innerHTML = "about the course";
+            }
+            //this is what you're looking for
+            var x = document.getElementById("myDIV");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
 	</body>
 </html>
