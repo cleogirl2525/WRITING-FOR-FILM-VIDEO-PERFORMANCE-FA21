@@ -133,9 +133,15 @@
       flex: 50%;
       padding: 15px;
       text-align: justify;
-      overflow-y: hidden;
+      overflow-y: scroll;
       overflow-x: hidden;
+       -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
     }
+    
+    .leftSide::-webkit-scrollbar {
+    display: none;
+  	}
     
     .rightSide{
       flex: 50%;
@@ -144,6 +150,7 @@
       overflow-y: scroll;
       overflow-x: hidden;
     }
+    
     
      .littleLeft{
       flex: 30%;
@@ -222,7 +229,7 @@
     <center>
      <button onclick="myFunction()" id="myButton" value="about the course">ABOUT THE COURSE</button>
 
- <div style="display:none; text-align:justify; padding:13px 0px 0px 0px;" id="myDIV"> Writing for Film, Video, and Performance is an interdisciplinary studio that develops skills specific to the challenges of writing for time-based projects, especially works in film, video, installation, and performance. In Fall 2022 it was facilitated by <a href="https://www.shawnemichaelainholloway.com/">SHAWNE MICHAELAIN HOLLOWAY</a> but it is typically taught by <a href="https://marypatten.com/home.html">Mary Patton</a> . The primary focus is in-class writing, a range of textual experiments, and workshop /critique of students' writing in relation to their own works-in-progress. We pay attention to 'invisible' texts--the writing before the script, free-writing, conceptual issues--as well as overt ones. Special emphasis is placed on developing the ear in work on monologue, dialogue, and voice-over. The class reads and discusses selected scripts and writings by artists, screens films and videos, attends exhibitions and performances, and performs close analyses (another form of 'reading') of texts.
+ <div style="display:none; text-align:justify; padding:13px 0px 0px 0px;" id="myDIV"> Writing for Film, Video, and Performance is an interdisciplinary studio that develops skills specific to the challenges of writing for time-based projects, especially works in film, video, installation, and performance. In Fall 2022 it was facilitated by <a href="https://www.shawnemichaelainholloway.com/" style="color:rgb(92, 255, 51);">SHAWNE MICHAELAIN HOLLOWAY</a> but it is typically taught by <a href="https://marypatten.com/home.html" style="color:rgb(92, 255, 51);">Mary Patten</a>. The primary focus is in-class writing, a range of textual experiments, and workshop /critique of students' writing in relation to their own works-in-progress. We pay attention to 'invisible' texts--the writing before the script, free-writing, conceptual issues--as well as overt ones. Special emphasis is placed on developing the ear in work on monologue, dialogue, and voice-over. The class reads and discusses selected scripts and writings by artists, screens films and videos, attends exhibitions and performances, and performs close analyses (another form of 'reading') of texts.
 </div>
       <br><a><button class="button">THE SYLLABUS</button></a><br>
       <a><button class="button">INSTAGRAM</button></a>
